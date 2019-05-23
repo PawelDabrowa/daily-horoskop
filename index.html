@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Daily Horoscope</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div div class="element popup">
+    <h1 class="popup-title">Please enter your name</h1>
+    <input class="input-name" type="text">
+    <button>SUBMIT</button>
+
+  </div>
+
+  <div id="month"></div>
+  <div id="day"></div>
+  <div class="container">
+    <div class="container header">
+      <h1>Your Daily Horoscope</h1>
+      <h3>Choose your sign <span class="name"></span></h3>
+    </div>
+    <div class="row">
+
+      <div class="col-sm-8">
+        <div class="container text-center select">
+          <hr>
+          <div class="row">
+            <div class="col-sm ">
+              <img data-option='cap-0' src="https://images.ganeshaspeaks.com/images_gsv7/capricorn200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Capricon</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-1' src="https://images.ganeshaspeaks.com/images_gsv7/aquarius200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Aquarius</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-2' src="https://images.ganeshaspeaks.com/images_gsv7/pisces200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Pisces</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-3' src="https://images.ganeshaspeaks.com/images_gsv7/aries200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Aries</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-4' src="https://images.ganeshaspeaks.com/images_gsv7/taurus200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Taurus</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-5' src="https://images.ganeshaspeaks.com/images_gsv7/gemini200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Gemini</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+
+              <img data-option='cap-6' src="https://images.ganeshaspeaks.com/images_gsv7/cancer200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+
+              <p>Cancer</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-7' src="https://images.ganeshaspeaks.com/images_gsv7/leo200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Leo</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-8' src="https://images.ganeshaspeaks.com/images_gsv7/virgo200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Virgo</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-9' src="https://images.ganeshaspeaks.com/images_gsv7/libra200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Libra</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-10' src="https://images.ganeshaspeaks.com/images_gsv7/scorpio200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Scorpio</p>
+            </div>
+            <div class="col-sm">
+              <img data-option='cap-11' src="https://images.ganeshaspeaks.com/images_gsv7/sagittarius200.png"
+                class="img-responsive" style="width:100%" alt="Image">
+              <p>Sagittarius</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="container">
+          <div class="row main-content">
+            <h4><strong>Selected Zodiac:</strong> </h4>
+            <h4 class="zodiac" id='sign'></h4>
+            <ul>
+              <li><strong>Date range:</strong>
+                <span id='range'></span>
+              </li>
+              <li><strong>Color:</strong>
+                <span id='color'></span>
+              </li>
+              <li><strong>Lucky number:</strong>
+                <span id='lucky_number'></span>
+              </li>
+              <li><strong>Lucky time:</strong>
+                <span id='lucky_time'></span>
+              </li>
+              <li><strong>Mood:</strong>
+                <span id='mood'></span>
+              </li>
+              <li><strong>Compatibility:</strong>
+                <span id='compatibility'></span>
+              </li>
+              <li>
+              </li>
+              <strong>Description:</strong>
+              <span id='message'></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <!-- My JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
