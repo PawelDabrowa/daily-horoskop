@@ -1,7 +1,7 @@
 
 body {
   padding: 20px;
-  position: relative;
+  
 }
 
 
@@ -10,6 +10,7 @@ body {
 }
 
 .popup {
+  position: relative;
   display: block;
   box-sizing: border-box;
   position: absolute;
@@ -37,6 +38,7 @@ button{
   z-index: 9999;
   cursor: pointer;
   transform: translate(-50%, -50%);
+  
 }
 
 input {
@@ -93,7 +95,8 @@ h1.popup-title{
   @media (max-width: 1024px) {
       img.img-responsive {
     width: 50px !important;
-  }}
+  }
+}
 
 @media (max-width: 550px) {
     img.img-responsive {
@@ -109,6 +112,10 @@ h4, .main-content {
     border-top: 1px solid #ddd;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.popup {
+  height: 500vh;
 }
 
 }
