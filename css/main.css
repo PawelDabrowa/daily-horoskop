@@ -1,8 +1,5 @@
 
-body {
-  padding: 20px;
-  
-}
+
 
 
 * {
@@ -19,6 +16,7 @@ body {
   height: 100vh;
   width: 100%;
   background-color: rgba(55, 49, 49, 1);
+  
 }
 
 .popup.active {
@@ -26,12 +24,12 @@ body {
 }
 
 
-button{
+button {
   position: absolute;
   margin-top: 15px;
   padding: 5px 10px;
   width: 200px;
-  top: calc(25% - 30px);
+  top: 140px;
   left: 50%;
   color: #fff;
   background-color: rgb(148, 62, 62);
@@ -45,7 +43,7 @@ input {
   position: absolute;
   width: 300px;
   padding:5px 10px;
-  top: calc(25% - 70px);
+  top: 100px;
   left: 50%;
   z-index: 9999;
   transform: translate(-50%, -50%);
@@ -115,24 +113,14 @@ h4, .main-content {
 }
 
 .popup {
-  height: 500vh;
+  height: 700vh;
 }
 
 }
 
 
 
-/* div.col-sm-2 {
-   
-    max-width: 26.666667% !important;
-}
 
-
-
-@media (min-width: 450px) {
-    div.col-sm-2 {
-    max-width: 26.666667%;
-}} */
 
 
   
